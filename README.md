@@ -1,6 +1,12 @@
 # Subdomains-enumeration-via-profundis-API
-The tool was designed to enumarate subdomains via profundis API, the tool utilizes an API Key of profundis the tool reads the API key via Env variables or you can specify with -k or --key.
+This tool is designed to enumerate subdomains using the Profundis API. It offers flexible input options and secure API key management.
 
+## Key Features
+* Domain Input: * Use `-d` to scan a single domain.
+  * Use `-f` or `--file` to scan multiple domains from a list.
+* Authentication:
+  * The tool requires a **Profundis API Key**.
+  * You can provide the key via environment variables or specify it directly using the `-k` or `--key` flag.
 # Installation
 1. git clone `https://github.com/ehpavan/Subdomains-enumeration-via-profundis-API.git`
 2. install the requirements via
@@ -22,7 +28,11 @@ python3 profundis.py -d <Domain> -k <Profundis-Key>
 ```
 python3 profundis.py -d <Domain>
 ```
-5. Saving output
+4. Providing Multiple domains via -f
+```
+python3 profundis.py -f domains.txt -k <Profundis-Key>
+```
+6. Saving output
 ```
 python3 profundis.py -d <domain> -k <profundis-Key> -o <output-file>
 ```
