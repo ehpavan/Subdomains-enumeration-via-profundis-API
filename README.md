@@ -8,8 +8,11 @@ This tool is designed to enumerate subdomains using the Profundis API. It offers
   * The tool requires a **Profundis API Key**.
   * You can provide the key via environment variables or specify it directly using the `-k` or `--key` flag.
 # Installation
-1. git clone `https://github.com/ehpavan/Subdomains-enumeration-via-profundis-API.git`
-2. install the requirements via
+1. Clone the repository via
+```
+git clone https://github.com/ehpavan/Subdomains-enumeration-via-profundis-API.git
+```
+3. install the requirements via
 ```
 pip3 install -r requirements.txt
 ```
